@@ -1,4 +1,7 @@
 function drawTable() {
+    var size = Math.min(window.innerWidth, window.innerHeight) * .8;
+    canvas.width = size;
+    canvas.height = size;
     ctx.clearRect (0, 0, canvas.width, canvas.height);
     drawGrid();
     drawTiles();
